@@ -2,296 +2,183 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>King Tide Marketing | SEO & Digital Marketing Agency in Langley BC</title>
   <meta name="description" content="King Tide Marketing helps businesses in Langley, BC rank higher and grow online with expert SEO, Google Ads, web design, and email marketing." />
   <link rel="canonical" href="https://kingtidemarketing.com/" />
 
-  <!-- Open Graph -->
+  <!-- Open Graph Tags -->
   <meta property="og:title" content="King Tide Marketing | SEO & Digital Marketing Agency" />
   <meta property="og:description" content="We help service businesses in Langley, BC grow with expert digital marketing services like SEO, web design, and ads." />
   <meta property="og:image" content="https://kingtidemarketing.com/wp-content/uploads/2023/10/logo.png" />
   <meta property="og:url" content="https://kingtidemarketing.com/" />
   <meta property="og:type" content="website" />
 
-  <!-- Twitter Card -->
+  <!-- Twitter Card Tags -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="King Tide Marketing | Digital Marketing Experts in BC" />
   <meta name="twitter:description" content="SEO, digital ads, web design, and email marketing for Langley-based service businesses." />
   <meta name="twitter:image" content="https://kingtidemarketing.com/wp-content/uploads/2023/10/logo.png" />
 
   <!-- Favicon -->
-  <link rel="icon" href="https://kingtidemarketing.com/wp-content/uploads/2023/10/favicon.png" type="image/png" />
+  <link rel="icon" href="https://kingtidemarketing.com/wp-content/uploads/2023/10/favicon.png" type="image/png">
 
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Schema Markup -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "King Tide Marketing",
+    "image": "https://kingtidemarketing.com/wp-content/uploads/2023/10/logo.png",
+    "@id": "https://kingtidemarketing.com/",
+    "url": "https://kingtidemarketing.com/",
+    "telephone": "+1-604-200-8167",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "4122 205b St",
+      "addressLocality": "Langley",
+      "addressRegion": "BC",
+      "postalCode": "V3A 2B4",
+      "addressCountry": "CA"
+    },
+    "sameAs": [
+      "https://www.facebook.com/kingtidemarketing",
+      "https://www.instagram.com/kingtide.marketing/",
+      "https://ca.linkedin.com/in/daniel-stead-64aa3b279",
+      "https://www.youtube.com/@KingTideMarketing"
+    ]
+  }
+  </script>
 
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: #f9fbff;
-      color: #222;
     }
-
-    /* Header/Hero */
     .hero {
-      background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+      background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.7)), url('https://kingtidemarketing.com/wp-content/uploads/2024/04/bg-marketing.jpg') center/cover no-repeat;
       color: white;
-      padding: 100px 15px;
+      padding: 100px 0;
       text-align: center;
     }
-
-    .hero h1 {
-      font-weight: 700;
-      font-size: 3rem;
+    .section-title {
+      margin-top: 50px;
       margin-bottom: 20px;
-      text-shadow: 2px 2px 8px rgba(0,0,0,0.3);
     }
-
-    .hero p {
-      font-size: 1.2rem;
-      max-width: 650px;
-      margin: 0 auto 40px auto;
-      text-shadow: 1px 1px 6px rgba(0,0,0,0.25);
-    }
-
-    .btn-primary {
-      background-color: #ff6f61;
-      border: none;
-      font-weight: 600;
-      padding: 12px 30px;
-      font-size: 1.1rem;
-      box-shadow: 0 5px 15px rgba(255,111,97,.4);
-      transition: background-color 0.3s ease;
-    }
-    .btn-primary:hover {
-      background-color: #e6554c;
-    }
-
-    /* Services Section */
-    .services {
-      padding: 60px 15px 80px 15px;
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-
-    .services h2 {
-      text-align: center;
-      margin-bottom: 50px;
-      font-weight: 700;
-      font-size: 2.8rem;
-      color: #222;
-    }
-
-    .service-box {
-      background: white;
-      border-radius: 12px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-      padding: 30px 25px;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-    }
-
-    .service-box:hover {
-      transform: translateY(-10px);
-      box-shadow: 0 12px 30px rgba(0,0,0,0.15);
-    }
-
-    .service-box h3 {
-      font-size: 1.5rem;
-      margin-bottom: 15px;
-      color: #2575fc;
-    }
-
-    .service-box p {
-      flex-grow: 1;
-      font-size: 1rem;
-      color: #555;
-      line-height: 1.5;
-    }
-
-    /* Contact Section */
-    .contact {
-      background: #2575fc;
+    .footer {
+      background-color: #212529;
       color: white;
-      padding: 50px 15px 70px 15px;
-      max-width: 1200px;
-      margin: 0 auto 80px auto;
-      border-radius: 12px;
-      box-shadow: 0 8px 30px rgba(37,117,252,0.3);
+      padding: 40px 0;
+      margin-top: 50px;
     }
-
-    .contact h2 {
-      font-weight: 700;
-      margin-bottom: 40px;
-      text-align: center;
-      font-size: 2.5rem;
-      text-shadow: 0 2px 8px rgba(0,0,0,0.3);
-    }
-
-    .contact-info {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      gap: 30px;
-      align-items: center;
-    }
-
-    .contact-details {
-      flex: 1 1 320px;
-      font-size: 1.1rem;
-      line-height: 1.7;
-    }
-
-    .contact-details strong {
-      display: block;
-      margin-bottom: 8px;
-      font-weight: 600;
-      font-size: 1.2rem;
-    }
-
-    .contact-details a {
-      color: #ffcccb;
-      text-decoration: underline;
-      transition: color 0.3s ease;
-    }
-
-    .contact-details a:hover {
-      color: #fff;
+    .footer a {
+      color: #ccc;
       text-decoration: none;
     }
-
-    .map-container {
-      flex: 1 1 450px;
-      border-radius: 12px;
+    .footer a:hover {
+      color: white;
+    }
+    .contact-section {
+      padding: 60px 0;
+    }
+    .map-responsive {
       overflow: hidden;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.15);
-      height: 320px;
+      padding-bottom: 56.25%;
+      position: relative;
+      height: 0;
     }
-
-    .map-container iframe {
-      border: 0;
-      width: 100%;
+    .map-responsive iframe {
+      left: 0;
+      top: 0;
       height: 100%;
+      width: 100%;
+      position: absolute;
     }
-
-    /* Footer */
-    footer.footer {
-      background: #222;
-      color: #aaa;
-      text-align: center;
-      padding: 30px 15px;
-      font-size: 0.9rem;
+    .service-box {
+      padding: 20px;
+      margin-bottom: 20px;
+      border: 1px solid #eee;
+      border-radius: 10px;
+      background-color: #f8f9fa;
+      transition: 0.3s;
     }
-
-    footer.footer a {
-      color: #ff6f61;
-      text-decoration: none;
-      font-weight: 600;
-    }
-
-    footer.footer a:hover {
-      text-decoration: underline;
-    }
-
-    /* Responsive tweaks */
-    @media (max-width: 767px) {
-      .contact-info {
-        flex-direction: column;
-      }
-      .map-container {
-        height: 280px;
-      }
+    .service-box:hover {
+      background-color: #e2f0ff;
+      transform: scale(1.02);
     }
   </style>
 </head>
 <body>
 
   <!-- Hero Section -->
-  <header class="hero">
-    <h1>King Tide Marketing</h1>
-    <p>We help businesses rank higher, convert faster, and retain more customers with expert SEO, digital ads, email marketing, and lead nurturing. Stop chasing leads—start closing them.</p>
-    <a href="mailto:info@kingtidemarketing.com" class="btn btn-primary">Get in Touch</a>
-  </header>
+  <section class="hero">
+    <div class="container">
+      <h1 class="display-4 fw-bold">King Tide Marketing</h1>
+      <p class="lead">Helping businesses rank higher, convert faster, and retain more customers with expert SEO, digital ads, email marketing, and lead nurturing.</p>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <div class="container mt-5">
+    <h2 class="text-center section-title">About Us</h2>
+    <p class="text-center">King Tide Marketing is a digital marketing agency based in Langley, BC. Since 2020, we've helped local businesses grow through customized SEO, web design, Google Ads, and email marketing strategies.</p>
+  </div>
 
   <!-- Services Section -->
-  <section class="services">
-    <h2>Our Services</h2>
-    <div class="row g-4">
-      <div class="col-md-4">
-        <div class="service-box">
-          <h3>SEO Services</h3>
-          <p>Boost your website’s organic rankings and attract qualified traffic with our expert Search Engine Optimization strategies tailored to your business.</p>
-        </div>
+  <div class="container mt-5">
+    <h2 class="text-center section-title">Our Services</h2>
+    <div class="row text-center">
+      <div class="col-md-3 service-box">
+        <h5>SEO Services</h5>
+        <p>Local SEO and organic traffic growth</p>
       </div>
-      <div class="col-md-4">
-        <div class="service-box">
-          <h3>Google Ads Management</h3>
-          <p>Maximize your ROI with expertly crafted Google Ads campaigns designed to target your ideal customers and generate leads efficiently.</p>
-        </div>
+      <div class="col-md-3 service-box">
+        <h5>Web Design</h5>
+        <p>Responsive, fast, and attractive websites</p>
       </div>
-      <div class="col-md-4">
-        <div class="service-box">
-          <h3>Web Design & Development</h3>
-          <p>Create stunning, responsive websites that engage visitors and convert them into loyal customers with modern designs and best practices.</p>
-        </div>
+      <div class="col-md-3 service-box">
+        <h5>Google Ads</h5>
+        <p>Targeted ad campaigns with ROI focus</p>
       </div>
-      <div class="col-md-4">
-        <div class="service-box">
-          <h3>Email Marketing</h3>
-          <p>Keep your audience engaged and nurture leads with personalized, data-driven email marketing campaigns that deliver measurable results.</p>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="service-box">
-          <h3>Local SEO</h3>
-          <p>Dominate your local market with SEO strategies focused on improving your presence in local search results and Google Business Profiles.</p>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="service-box">
-          <h3>Lead Generation</h3>
-          <p>Generate qualified leads consistently using targeted digital marketing and data-driven strategies tailored for your service business.</p>
-        </div>
+      <div class="col-md-3 service-box">
+        <h5>Email Marketing</h5>
+        <p>Lead nurturing and customer retention</p>
       </div>
     </div>
-  </section>
+  </div>
 
-  <!-- Contact Section -->
-  <section class="contact">
-    <h2>Contact Us</h2>
-    <div class="contact-info">
-      <div class="contact-details">
-        <strong>Address:</strong>
-        4122 205b St, Langley, BC V3A 2B4, Canada<br />
-        <strong>Phone:</strong> <a href="tel:+16042008167">604-200-8167</a><br />
-        <strong>Email:</strong> <a href="mailto:info@kingtidemarketing.com">info@kingtidemarketing.com</a><br />
-        <strong>Website:</strong> <a href="https://kingtidemarketing.com" target="_blank" rel="noopener">kingtidemarketing.com</a><br />
-        <strong>Business Hours:</strong> Open 24 hours, everyday<br />
-        <strong>Service Areas:</strong> Greater Vancouver, Burnaby, Coquitlam, Surrey, North Vancouver, Richmond, BC, Canada (Remote available)<br />
+  <!-- Contact Section with Map -->
+  <div class="container contact-section">
+    <div class="row">
+      <div class="col-md-6">
+        <h3>Contact Information</h3>
+        <p><strong>Address:</strong> 4122 205b St, Langley, BC V3A 2B4, Canada</p>
+        <p><strong>Phone:</strong> <a href="tel:+16042008167">604-200-8167</a></p>
+        <p><strong>Email:</strong> <a href="mailto:info@kingtidemarketing.com">info@kingtidemarketing.com</a></p>
+        <p><strong>Business Hours:</strong> Open 24 hours, daily</p>
+        <p><strong>Service Areas:</strong> Greater Vancouver, Surrey, Burnaby, Coquitlam, Richmond, North Vancouver, Remote across Canada</p>
+        <p><strong>Social:</strong>
+          <a href="https://www.facebook.com/kingtidemarketing" target="_blank">Facebook</a> |
+          <a href="https://www.instagram.com/kingtide.marketing/" target="_blank">Instagram</a> |
+          <a href="https://ca.linkedin.com/in/daniel-stead-64aa3b279" target="_blank">LinkedIn</a> |
+          <a href="https://www.youtube.com/@KingTideMarketing" target="_blank">YouTube</a>
+        </p>
       </div>
-      <div class="map-container">
-        <iframe
-          src="https://www.google.com/maps?q=4122+205b+St,+Langley,+BC+V3A+2B4,+Canada&output=embed"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-          title="King Tide Marketing Location"
-        ></iframe>
+      <div class="col-md-6">
+        <div class="map-responsive">
+          <iframe src="https://www.google.com/maps?q=4122+205b+St,+Langley,+BC+V3A+2B4,+Canada&output=embed" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
       </div>
     </div>
-  </section>
+  </div>
 
   <!-- Footer -->
-  <footer class="footer">
-    &copy; 2025 King Tide Marketing. All rights reserved. | <a href="https://kingtidemarketing.com/privacy-policy" target="_blank" rel="noopener">Privacy Policy</a>
+  <footer class="footer text-center">
+    <div class="container">
+      <p>&copy; 2025 King Tide Marketing. All rights reserved.</p>
+      <p>Website by King Tide Marketing | <a href="mailto:info@kingtidemarketing.com">Contact Us</a></p>
+    </div>
   </footer>
 
-  <!-- Bootstrap JS Bundle -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
-
