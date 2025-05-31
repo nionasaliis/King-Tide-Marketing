@@ -78,37 +78,94 @@
     .footer a:hover {
       color: white;
     }
-    .map-container {
-      position: relative;
-      overflow: hidden;
-      padding-top: 56.25%;
-      border-radius: 12px;
-      box-shadow: 0 5px 20px rgba(0,0,0,0.2);
-      margin: 50px auto;
-      max-width: 900px;
+    .contact-section {
+      padding: 60px 0;
     }
-    .map-container iframe {
-      position: absolute;
-      top: 0;
+    .map-responsive {
+      overflow: hidden;
+      padding-bottom: 56.25%;
+      position: relative;
+      height: 0;
+    }
+    .map-responsive iframe {
       left: 0;
-      width: 100%;
+      top: 0;
       height: 100%;
-      border: 0;
+      width: 100%;
+      position: absolute;
     }
   </style>
 </head>
 <body>
-  <!-- Hero section and other content would go here -->
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h1 class="display-4">King Tide Marketing</h1>
+      <p class="lead">Helping businesses rank higher, convert faster, and retain more customers with expert SEO, digital ads, email marketing, and lead nurturing.</p>
+    </div>
+  </section>
 
-  <!-- Google Map Embed Section -->
-  <div class="container">
-    <h2 class="text-center section-title">Our Location</h2>
-    <div class="map-container">
-      <iframe src="https://www.google.com/maps?q=4122+205b+St,+Langley,+BC+V3A+2B4,+Canada&output=embed" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  <!-- About Section -->
+  <div class="container mt-5">
+    <h2 class="text-center section-title">About Us</h2>
+    <p class="text-center">King Tide Marketing is a digital marketing agency based in Langley, BC. Since 2020, we've helped local businesses grow through customized SEO, web design, Google Ads, and email marketing strategies.</p>
+  </div>
+
+  <!-- Services Section -->
+  <div class="container mt-5">
+    <h2 class="text-center section-title">Our Services</h2>
+    <div class="row text-center">
+      <div class="col-md-3">
+        <h5>SEO Services</h5>
+        <p>Local SEO and organic traffic growth</p>
+      </div>
+      <div class="col-md-3">
+        <h5>Web Design</h5>
+        <p>Responsive, fast, and attractive websites</p>
+      </div>
+      <div class="col-md-3">
+        <h5>Google Ads</h5>
+        <p>Targeted ad campaigns with ROI focus</p>
+      </div>
+      <div class="col-md-3">
+        <h5>Email Marketing</h5>
+        <p>Lead nurturing and customer retention</p>
+      </div>
     </div>
   </div>
 
-  <!-- Footer section would go here -->
+  <!-- Contact Section with Map -->
+  <div class="container contact-section">
+    <div class="row">
+      <div class="col-md-6">
+        <h3>Contact Information</h3>
+        <p><strong>Address:</strong> 4122 205b St, Langley, BC V3A 2B4, Canada</p>
+        <p><strong>Phone:</strong> <a href="tel:+16042008167">604-200-8167</a></p>
+        <p><strong>Email:</strong> <a href="mailto:info@kingtidemarketing.com">info@kingtidemarketing.com</a></p>
+        <p><strong>Business Hours:</strong> Open 24 hours, daily</p>
+        <p><strong>Service Areas:</strong> Greater Vancouver, Surrey, Burnaby, Coquitlam, Richmond, North Vancouver, Remote across Canada</p>
+        <p><strong>Social:</strong>
+          <a href="https://www.facebook.com/kingtidemarketing" target="_blank">Facebook</a> |
+          <a href="https://www.instagram.com/kingtide.marketing/" target="_blank">Instagram</a> |
+          <a href="https://ca.linkedin.com/in/daniel-stead-64aa3b279" target="_blank">LinkedIn</a> |
+          <a href="https://www.youtube.com/@KingTideMarketing" target="_blank">YouTube</a>
+        </p>
+      </div>
+      <div class="col-md-6">
+        <div class="map-responsive">
+          <iframe src="https://www.google.com/maps?q=4122+205b+St,+Langley,+BC+V3A+2B4,+Canada&output=embed" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer text-center">
+    <div class="container">
+      <p>&copy; 2025 King Tide Marketing. All rights reserved.</p>
+      <p>Website by King Tide Marketing | <a href="mailto:info@kingtidemarketing.com">Contact Us</a></p>
+    </div>
+  </footer>
+
 </body>
 </html>
-
